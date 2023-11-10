@@ -1,5 +1,5 @@
 const mysql = require('mysql');
-const { connect } = require('./src/routes');
+const {connect} = require('./src/routes');
 
 const connection = mysql.createConnection({
     host: process.env.DB_HOST,

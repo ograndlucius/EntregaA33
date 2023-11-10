@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-const NikeController = require('./controllers/NikeController.js')
+const NikeController = require('./controllers/NikeController.js');
 
-router.get('/nikes', NikeController.buscarTodos); // "/nikes" é o comando resposável por buscar todos os tênis
+router.get('/nikes', NikeController.consultaNikes); // "/nikes" é o comando resposável por buscar todos os tênis
 
 
 module.exports = router;
